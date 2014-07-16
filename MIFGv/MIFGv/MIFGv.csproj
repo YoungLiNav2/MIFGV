@@ -49,6 +49,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlXml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Drawingpet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawingpet.Designer.cs">
+      <DependentUpon>Drawingpet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Drawingpet.resx">
+      <DependentUpon>Drawingpet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +100,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ConnectDatabaseDataSet.xsc">
+      <DependentUpon>ConnectDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConnectDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConnectDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConnectDatabaseDataSet.xss">
+      <DependentUpon>ConnectDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConnectDatabaseDataSet1.xsc">
+      <DependentUpon>ConnectDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ConnectDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConnectDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConnectDatabaseDataSet1.xss">
+      <DependentUpon>ConnectDatabaseDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
